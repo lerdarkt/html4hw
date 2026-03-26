@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог Нетологии</title>
+    <style>
+        /* Базовые стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px;
+        }
+
+        /* Стили из задания */
+        .news {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1020px;
+            margin: 0 auto;
+        }
+
+        .card {
+            box-sizing: border-box;
+            width: 320px;
+            padding: 50px 40px;
+            border: 2px solid #dfdee8;
+            background: white;
+            border-radius: 8px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .card:nth-child(n+4) {
+            margin-top: 30px;
+        }
+
+        .card:nth-child(3n+2) {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .card-date {
+            display: block;
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .card-name {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Своя тусовка: афиша событий на сентябрь 2018</h3>
+            </header>
+            <div class="card-content">
+                <p>Каждый месяц «Нетология» рассказывает о лучших мероприятиях по маркетингу, менеджменту, дизайну, информационным технологиям и управлению персоналом.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Разбираемся в дизайнерских профессиях</h3>
+            </header>
+            <div class="card-content">
+                <p>Алексей Бородкин, product lead и глава Гильдии вольных проектировщиков, рассказал на открытом занятии Нетологии, как разобраться в дизайнерских направлениях и выбрать профессию.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Как знакомство с IT-компанией поменяло мою карьеру</h3>
+            </header>
+            <div class="card-content">
+                <p>Стажёрка рассказала о том, как попала в отдел разработки интернет-сервиса и как этот опыт повлиял на её профессиональный путь.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Спецпроект: как креатив и продукты помогают учиться</h3>
+            </header>
+            <div class="card-content">
+                <p>Команда Нетологии рассказала о том, как создаются образовательные продукты: от идеи до реализации. Узнайте, как дизайн, маркетинг и разработка работают вместе.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Как выбрать направление в IT: гид для начинающих</h3>
+            </header>
+            <div class="card-content">
+                <p>Разбираем популярные IT-специализации: frontend, backend, DevOps, Data Science и другие. Поможем понять, что подходит именно вам.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Как не выгореть в работе и учёбе</h3>
+            </header>
+            <div class="card-content">
+                <p>Советы психологов и опытных специалистов о том, как сохранять баланс между работой, учёбой и личной жизнью.</p>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
