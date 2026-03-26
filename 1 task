@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши эксперты — Нетология</title>
+    <style>
+        /* Базовые стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            padding: 40px;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Стили из задания */
+        .speakers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .speaker {
+            width: calc(33.333% - 20px);
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .speaker:nth-child(4) {
+            border-top: 3px solid #d9dbf5;
+            padding-top: 20px;
+        }
+
+        .speaker:nth-child(even) {
+            background-color: #f0f1fb;
+        }
+
+        .speaker-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .speaker-name {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <h2 class="section-title">Наши эксперты</h2>
+        <div class="speakers">
+            <div class="speaker">
+                <img src="https://netology-code.github.io/html-2-homeworks/block-elements-positioning/our-experts-section/img/6211.jpg" class="speaker-photo" alt="Татьяна Тен">
+                <span class="speaker-name">Татьяна Тен</span>
+            </div>
+            <div class="speaker">
+                <img src="https://netology-code.github.io/html-2-homeworks/block-elements-positioning/our-experts-section/img/18702.jpeg" class="speaker-photo" alt="Денис Ежков">
+                <span class="speaker-name">Денис Ежков</span>
+            </div>
+            <div class="speaker">
+                <img src="https://netology-code.github.io/html-2-homeworks/block-elements-positioning/our-experts-section/img/18292.jpeg" class="speaker-photo" alt="Андрей Батусов">
+                <span class="speaker-name">Андрей Батусов</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
